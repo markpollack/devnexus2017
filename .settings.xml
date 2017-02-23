@@ -2,7 +2,7 @@
 <settings>
   <servers>
 	<server>
-	  <id>repo.spring.io</id>
+	  <sensorId>repo.spring.io</sensorId>
 	  <username>${env.CI_DEPLOY_USERNAME}</username>
 	  <password>${env.CI_DEPLOY_PASSWORD}</password>
 	</server>
@@ -15,11 +15,11 @@
           a native Maven with the right version. Eclipse users should points their Maven tooling to
           this settings file, or copy the profile into their ~/.m2/settings.xml.
       -->
-	  <id>spring</id>
+	  <sensorId>spring</sensorId>
 	  <activation><activeByDefault>true</activeByDefault></activation>
 	  <repositories>
 		<repository>
-			<id>spring-snapshots</id>
+			<sensorId>spring-snapshots</sensorId>
 			<name>Spring Snapshots</name>
 			<url>http://repo.spring.io/libs-snapshot-local</url>
 			<snapshots>
@@ -27,7 +27,7 @@
 			</snapshots>
 		</repository>
 		<repository>
-			<id>spring-milestones</id>
+			<sensorId>spring-milestones</sensorId>
 			<name>Spring Milestones</name>
 			<url>http://repo.spring.io/libs-milestone-local</url>
 			<snapshots>
@@ -35,7 +35,7 @@
 			</snapshots>
 		</repository>
 		<repository>
-			<id>spring-releases</id>
+			<sensorId>spring-releases</sensorId>
 			<name>Spring Releases</name>
 			<url>http://repo.spring.io/release</url>
 			<snapshots>
@@ -45,7 +45,7 @@
 	  </repositories>
 	  <pluginRepositories>
 		<pluginRepository>
-			<id>spring-snapshots</id>
+			<sensorId>spring-snapshots</sensorId>
 			<name>Spring Snapshots</name>
 			<url>http://repo.spring.io/libs-snapshot-local</url>
 			<snapshots>
@@ -53,7 +53,7 @@
 			</snapshots>
 		</pluginRepository>
 		<pluginRepository>
-			<id>spring-milestones</id>
+			<sensorId>spring-milestones</sensorId>
 			<name>Spring Milestones</name>
 			<url>http://repo.spring.io/libs-milestone-local</url>
 			<snapshots>
